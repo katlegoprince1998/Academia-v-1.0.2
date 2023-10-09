@@ -539,7 +539,7 @@ input, textarea{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--active--color);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -588,7 +588,7 @@ input, textarea{
 .userText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #5ca6fa;
+    background: var(--active--color);
     padding: 10px;
     border-radius: 8px;
     border-bottom-right-radius: 2px;

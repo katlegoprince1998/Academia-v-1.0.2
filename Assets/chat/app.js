@@ -34,7 +34,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-  let firstMessage = "How's it going?";
+  let firstMessage = "Good day, how can I assist you?";
   document.getElementById("botStarterMessage").innerHTML =
     '<p class="botText"><span>' + firstMessage + "</span></p>";
 
@@ -60,7 +60,7 @@ function getResponse() {
   let userText = $("#textInput").val();
 
   if (userText == "") {
-    userText = "I love Code Palace!";
+    userText = "Please type below to ask your question!";
   }
 
   let userHtml = '<p class="userText"><span>' + userText + "</span></p>";
@@ -88,7 +88,7 @@ function sendButton() {
 }
 
 function heartButton() {
-  buttonSendText("Heart clicked!");
+  buttonSendText("I love this!");
 }
 
 // Press enter to send a message
@@ -99,21 +99,43 @@ $("#textInput").keypress(function (e) {
 });
 
 function getBotResponse(input) {
-  //rock paper scissors
-  if (input == "rock") {
-    return "paper";
-  } else if (input == "paper") {
-    return "scissors";
-  } else if (input == "scissors") {
-    return "rock";
-  }
-
-  // Simple responses
-  if (input == "hello") {
-    return "Hello there!";
-  } else if (input == "goodbye") {
-    return "Talk to you later!";
-  } else {
-    return "Try asking something else!";
+  if (
+    input == "hi" ||
+    input == "Hi" ||
+    input == "HI" ||
+    input == "Good day" ||
+    input == "ood day" ||
+    input == "Good Day" ||
+    input == "Good morning" ||
+    input == "good morning" ||
+    input == "Good Gorning" ||
+    input == "good afternoon" ||
+    input == "Good Afternoon" ||
+    input == "Good afternoon" ||
+    input == "Hello" ||
+    input == "hello" ||
+    input == "HELLO"
+  ) {
+    return "Good day, how may I assist you?";
+  } else if (
+    input == "What is the history of the school" ||
+    input == "School history"
+  ) {
+    return "Mzamomtsha, Primary School is located between Khayelistha Township and Umfuleni Township in the Western Cape Province of the Republic of South Africa.The schools headmaster, Mr. Simphiwe Khuze, joined in 2007. The school is located in a semi-township called Drift Sands which started off as an     informal settlement. Drift Sands has since been developed and with support from the South African  government it turned into a sprawling township with state of the art housing units.";
+  } else if (
+    input == "School values" ||
+    input == "school values" ||
+    input == "School Values"
+  ) {
+    return "1. We believe that all students can achieve at high levels.<br> 2. We believe that all students deserve a fair chance to succeed. <br> 3.  We believe that learning is enhanced by a strong community. 4.  We are committed to continuous improvement.";
+  } else if (
+    input == "School Vision" ||
+    input == "School vison" ||
+    input == "school visoon" ||
+    input == "school Vision"
+  ) {
+    return "Our vision is to develop well rounded, confident and responsible individuals  who aspire to achieve their full potential. We will do this by providing a welcoming, happy, safe, and supportive learning environment in which everyone is equal and all  achievements are celebrated.";
+  } else if (input == "bye" || input == "Bye") {
+    return "Bye!! Enjoy day..";
   }
 }

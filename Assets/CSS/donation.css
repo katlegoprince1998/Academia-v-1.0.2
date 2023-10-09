@@ -50,7 +50,7 @@ nav a{
 }
 
 nav a:hover{
-    color: var(--secondary-color);
+    color: var(--active--color);
 }
 nav li:first-child{
     margin-right: auto;
@@ -80,7 +80,7 @@ nav li:first-child{
   }
 
   .dropdown .dropdown-options a:hover {
-    color: #000106;
+    color: var(--active--color);
   }
 
 
@@ -315,7 +315,7 @@ background-color: #3a3a06;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--active--color);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -364,7 +364,7 @@ background-color: #3a3a06;
 .userText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #5ca6fa;
+    background: var(--active--color);
     padding: 10px;
     border-radius: 8px;
     border-bottom-right-radius: 2px;
