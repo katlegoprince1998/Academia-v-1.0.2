@@ -112,8 +112,7 @@
 .chatbox__button button,
 .chatbox__button button:focus,
 .chatbox__button button:visited {
-    padding: 10px;
-    color: var(--primary-color);
+    padding: 5px;
     border: none;
     outline: none;
     border-top-left-radius: 50px;
