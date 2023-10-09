@@ -7,6 +7,9 @@
     --hover-aclor : #808000;
     --card-text-color: #708090;
     --card-title-color: #808000;
+    --display-5-color: #fff;
+    --btn-color: #808000;
+    --current-color:  	#808080;
 }
 
 :root{
@@ -16,6 +19,9 @@
   --hover-aclor : #808000;
   --card-text-color: rgb(139, 123, 123);
   --card-title-color: #778899;
+  --display-5-color: #050301;
+  --btn-color: #808000;
+  --current-color:  	#808080;
 }
 
 
@@ -138,8 +144,28 @@ nav li:first-child{
     color: var(--card-title-color);
 }
 
-
-
+.display-5{
+    color: var(--display-5-color);
+}
+.col-lg-6{
+    color: var(--card-text-color);
+}
+.btn{
+    background-color: var(--btn-color);
+    transition: all 0.3 ease-in-out;
+   
+}
+.btn a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+.btn:hover{
+    background-color: #4d4d0d;
+}
+.current{
+    color: var(--current-color);
+}
 .social-link {
   width: 30px;
   height: 30px;
