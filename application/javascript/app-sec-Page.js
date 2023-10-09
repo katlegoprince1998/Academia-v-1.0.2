@@ -58,15 +58,15 @@ let items=[{southAfrican:citizen,ID:idNum,PassPort:passport,dateOfBirth:dob,Naam
 
 //to retrieve data,use getItem() method
 //localStorage.getItem()
-   if (citizen==""||dob==""||Names==""||Surname==""||initials==""||race==""||language==""||title==""||gender=="") {
-        alert("Please enter all your details");
-        return false;
+//    if (citizen==""||dob==""||Names==""||Surname==""||initials==""||race==""||language==""||title==""||gender=="") {
+//         alert("Please enter all your details");
+//         return false;
         
-    } else {
-        localStorage.setItem("Personal",JSON.stringify(items));
-        location.href="app3.html";    
-    }
-    
+//     } else {
+//         localStorage.setItem("Personal",JSON.stringify(items));
+//         location.href="app3.html";    
+//     }
+location.href="app3.html";
 }
 
 

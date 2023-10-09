@@ -61,15 +61,15 @@ function Next() {
     let items=[{Names:name,Relationship:relation,Email:email,Phone:phoneNumber,Add1:add1,Add2:add2,Add3:add3,PCode:pCode,
     POct:pOpt,Surburb:surburb,Box:box,PostCode:poCode}]
     
-    if (name==""||relation==""||email==""||phoneNumber==""||add1==""||add2==""||add3==""||pCode==""||pOpt==""  ) {
-        alert("Please enter all your details");
-        return false;
-    } else {
-        localStorage.setItem("NextOfKin",JSON.stringify(items));
-        location.href="app9.html"; 
+    // if (name==""||relation==""||email==""||phoneNumber==""||add1==""||add2==""||add3==""||pCode==""||pOpt==""  ) {
+    //     alert("Please enter all your details");
+    //     return false;
+    // } else {
+    //     localStorage.setItem("NextOfKin",JSON.stringify(items));
+    //     location.href="app9.html"; 
         
-    }
-
+    // }
+    location.href="app9.html"; 
 }
 
 function displayNextOfKin() {
