@@ -394,7 +394,7 @@ input, textarea{
 #banner{
     margin-top: 2rem;
     height: 50vh;
-    background: #000106 url(/Assets/Images/about_banner.jpg);
+    background: #000106 url(/Images/about_banner.jpg);
     background-attachment: fixed;
     display: flex;
     align-items: center;

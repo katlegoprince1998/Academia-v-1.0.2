@@ -159,6 +159,10 @@ nav li:first-child{
     bottom: 70px;
     left: 150px;
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: -100px ;
 
 }
 .container1{
