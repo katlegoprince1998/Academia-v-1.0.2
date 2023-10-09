@@ -4,12 +4,24 @@
     --primary-color: #000106;
     --secondary-color: #fff;
     --active--color: #808000;
+    --hover-aclor : #808000;
+    --card-text-color: #708090;
+    --card-title-color: #808000;
+    --display-5-color: #fff;
+    --btn-color: #808000;
+    --current-color:  	#808080;
 }
 
 :root{
   --primary-color: #fff;
   --secondary-color: #808000;
   --active--color: #808000;
+  --hover-aclor : #808000;
+  --card-text-color: rgb(139, 123, 123);
+  --card-title-color: #778899;
+  --display-5-color: #050301;
+  --btn-color: #808000;
+  --current-color:  	#808080;
 }
 
 *{
@@ -18,10 +30,17 @@
     box-sizing: border-box;
 } 
 
+a.current{
+    color: var(--current-color);
+}
+
 
 a.active{
     color:var(--active--color);
  
+}
+.head{
+    color: var(--card-text-color);
 }
 .logo{
     width: 60px;
@@ -105,6 +124,8 @@ nav li:first-child{
     background-size: cover;
     background-image: url(../Images/wp6944127-contact-us-wallpapers.jpg);
   
+   
+  
 }
 
 .contact .content{
@@ -116,7 +137,7 @@ nav li:first-child{
 
     font-size: 30px;
     font-weight: 800;
-    color: white; 
+    color: var(--primary-color); 
     /* color: rgb(244, 236, 236); */
    
 }
@@ -126,7 +147,7 @@ nav li:first-child{
    
     font-weight: 350;
     font-size:25px;
-    color: black;
+    color: var(--primary-color);
 }
 .contactInfo {
     margin-top: -2rem;
@@ -165,7 +186,7 @@ nav li:first-child{
 .container1 .contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
-    background: var(--secondary-color);
+    background: var(--active--color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +247,7 @@ nav li:first-child{
 }
 .contactForm h2{
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    
     font-weight: 500;
 
 }

@@ -4,12 +4,27 @@
     --primary-color: #000106;
     --secondary-color: #fff;
     --active--color: #808000;
+    --hover-aclor : #808000;
+    --card-text-color: #708090;
+    --card-title-color: #808000;
+    --display-5-color: #fff;
+    --btn-color: #808000;
+    --current-color:  	#808080;
+    --myCar-box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    
 }
 
 :root{
   --primary-color: #fff;
   --secondary-color: #808000;
   --active--color: #808000;
+  --hover-aclor : #808000;
+  --card-text-color: rgb(139, 123, 123);
+  --card-title-color: #778899;
+  --display-5-color: #050301;
+  --btn-color: #808000;
+  --current-color:#808080;
+  --myCar-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 *{
@@ -21,14 +36,23 @@
 body {
     /* overflow: hidden; */
 }
-a.active{
-    color: var(--active--color);
+a.current{
+    color: var(--current-color);
  
+}
+.display-1{
+    color: var(--display-5-color);
 }
 .logo{
     width: 60px;
 }
-
+.myCard{
+    box-shadow: var(--myCar-box-shadow);
+    border-radius: 12px;
+}
+.mb-0{
+    color: var(--card-text-color);
+}
 section {
      display: flex;
      gap: 3rem;
