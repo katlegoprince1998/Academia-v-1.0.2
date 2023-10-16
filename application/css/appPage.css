@@ -438,6 +438,88 @@ border-color: #b1b112;
   {
     display: none;
   }
+
+@media screen and (max-width:600){
+    .form-container-one{
+        position: relative;
+        background-color: rgba(88, 62, 62, 0.7);
+        padding: 10px;
+        padding-top: 0;
+        width: 20%;
+      
+        height: auto;
+    }
+    .header-one{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.945);
+    }
+    .section-one{
+        position: relative;
+        margin-top: 76px;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+}
+@media (max-width:991px)
+{
+    .form-container1
+    {
+      position: absolute;
+        padding: 50px;
+        width: fit-content;
+        left: 30px;
+        padding: 10px;
+
+    }
+    .bg{
+      position: absolute;
+      width: 200%;
+    }
+    .pdf{
+      left: 0px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo,.contactForm
+    {
+        width:100%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*.backgroundcover
 {
     height: 100vh;
