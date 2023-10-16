@@ -772,3 +772,33 @@ button:hover {
     }
 }
  
+
+   
+@media (max-width:991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container1
+    {
+        flex-direction: column;
+    }
+    .container1 .container2 .mapouter{
+        left: 15px;
+        top: 200px;
+    }
+    .container1 .container2 .gmap_canvas{
+        display: flex;
+        overflow: hidden;
+    background: none!important;
+    width: auto;
+    height: auto;
+    
+    }
+    .container1 .contactInfo,.contactForm
+    {
+        left: 90px;
+         width: 80%;
+    }
+}
