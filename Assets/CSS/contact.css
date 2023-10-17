@@ -31,7 +31,7 @@
 } 
 
 a.current{
-    color: var( --active--color);
+    color: var(  --card-title-color);
 }
 .current:hover{
     color: var(--current-color);
@@ -92,6 +92,7 @@ nav li:first-child{
     display: inline-block;
     position: relative;
     align-items: center;
+    
 }
 
 .dropdown-options {

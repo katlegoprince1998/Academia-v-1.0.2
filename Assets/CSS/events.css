@@ -38,7 +38,7 @@ section {
      gap: 3rem;
 }
 .textColor{
-    color: var(--dim-gray-color);
+    color: var(--secondary-color);
 }
 
 ul{
@@ -52,7 +52,7 @@ p{
     height: 1rem;
 }
 a.current{
-    color: var( --active--color);
+    color: var(  --card-title-color);
 }
 .current:hover{
     color: var(--current-color);
@@ -98,6 +98,7 @@ nav li:first-child{
     background-color: var(--primary-color);
     min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
   
 .dropdown-options a {
@@ -403,6 +404,7 @@ input, textarea{
     justify-items: center;
     flex-direction: column;
     background-size: contain;
+    filter: brightness(90%);
    
     
 }

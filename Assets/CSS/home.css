@@ -166,8 +166,8 @@ nav li:first-child{
 .btn:hover{
     background-color: #4d4d0d;
 }
-.current{
-    color: var( --hover-aclor);
+a.current{
+    color: var(  --card-title-color);
 }
 .current:hover{
     color: var(--current-color);
