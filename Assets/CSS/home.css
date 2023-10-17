@@ -428,5 +428,14 @@ button:hover {
         border-top: 3px solid var(--primary-color);
         border-radius: 0px;
     }
+   
+
 }
- 
+@media (max-width:991px){
+    .row .col .card img{
+     
+        height:100px;
+    
+      }
+  
+ }
