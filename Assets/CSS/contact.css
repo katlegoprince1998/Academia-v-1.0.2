@@ -5,7 +5,7 @@
     --secondary-color: #fff;
     --active--color: #808000;
     --hover-aclor : #808000;
-    --card-text-color: #708090;
+    --card-text-color: #fff;
     --card-title-color: #808000;
     --display-5-color: #fff;
     --btn-color: #808000;
@@ -18,7 +18,7 @@
   --active--color: #808000;
   --hover-aclor : #808000;
   --card-text-color: rgb(139, 123, 123);
-  --card-title-color: #778899;
+  --card-title-color: black;
   --display-5-color: #050301;
   --btn-color: #808000;
   --current-color:  	#808080;
@@ -31,14 +31,18 @@
 } 
 
 a.current{
+    color: var( --active--color);
+}
+.current:hover{
     color: var(--current-color);
 }
-
-
-a.active{
+nav a:hover{
+    color: var(--active--color);
+}
+/* a.active{
     color:var(--active--color);
  
-}
+} */
 .head{
     color: var(--card-text-color);
 }
@@ -80,7 +84,10 @@ nav a:hover{
 nav li:first-child{
     margin-right: auto;
 }
-
+.collapse a:hover
+{
+    color: var( --hover-aclor);
+}
 .dropdown {
     display: inline-block;
     position: relative;
@@ -90,7 +97,7 @@ nav li:first-child{
 .dropdown-options {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--primary-color);
     min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -457,7 +464,7 @@ input, textarea{
 
 /* toggle */
 
-#icon{
+/* #icon{
     position: fixed;
     top: 50%;
     font-size: 30px;
@@ -469,7 +476,7 @@ input, textarea{
 }
 #icon:hover{
     transform: translateX(-20%);
-}
+} */
 
 
 @media only screen and (max-width: 600px) {

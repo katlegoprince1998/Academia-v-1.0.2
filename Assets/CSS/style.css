@@ -132,3 +132,19 @@ footer .container_1 .contact .info li a {
     padding: 20px 100px 30px;
     text-align: center;
 }
+#icon{
+    position: relative;
+   /* margin-right: 5px; */
+    font-size: 30px;
+    /* right: 10px; */
+    transition: all 0.3s ease;
+    color: orange;
+    width: 30px;
+    z-index: 999;
+    bottom: -0.8px;
+    
+    
+}
+#icon:hover{
+    transform: translateX(-20%);
+}

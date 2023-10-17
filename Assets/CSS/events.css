@@ -5,14 +5,11 @@
     --secondary-color: #fff;
     --active--color: #808000;
     --hover-aclor : #808000;
-    --card-text-color: #708090;
+    --card-text-color: #fff;
     --card-title-color: #808000;
     --display-5-color: #fff;
     --btn-color: #808000;
     --current-color:  	#808080;
-    --myCar-box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
-    --dim-gray-color: #696969;
-    
 }
 
 :root{
@@ -21,14 +18,11 @@
   --active--color: #808000;
   --hover-aclor : #808000;
   --card-text-color: rgb(139, 123, 123);
-  --card-title-color: #778899;
+  --card-title-color: black;
   --display-5-color: #050301;
   --btn-color: #808000;
-  --current-color:#808080;
-  --myCar-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --dim-gray-color: #696969;
+  --current-color:  	#808080;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -58,6 +52,9 @@ p{
     height: 1rem;
 }
 a.current{
+    color: var( --active--color);
+}
+.current:hover{
     color: var(--current-color);
 }
 .conHead{
@@ -98,7 +95,7 @@ nav li:first-child{
 .dropdown-options {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--primary-color);
     min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -423,7 +420,7 @@ input, textarea{
 
 /* toggle */
 
-#icon{
+/* #icon{
     position: fixed;
     top: 50%;
     font-size: 30px;
@@ -435,7 +432,7 @@ input, textarea{
 }
 #icon:hover{
     transform: translateX(-20%);
-}
+} */
 
 
 @media only screen and (max-width: 600px) {
@@ -505,6 +502,10 @@ button:hover {
     border-radius: 10px 10px 0px 0px;
    
     border-bottom: none;
+}
+.collapse a:hover
+{
+    color: var( --hover-aclor);
 }
 .content {
     max-height: 0;

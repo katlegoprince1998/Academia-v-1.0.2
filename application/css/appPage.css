@@ -293,13 +293,7 @@ margin-top: 10px;
     {
         font-size: 12px;
     }
-    .buttn
-    {position: relative;
-        left: 10px;
-        margin-bottom: 42rem;
-         /* margin-right: 7rem;
-         padding-right: 15rem; */
-    }
+   
 }
 
 .footer .backBtn
@@ -439,7 +433,7 @@ border-color: #b1b112;
     display: none;
   }
 
-@media screen and (max-width:600){
+/* @media screen and (max-width:600){
     .form-container-one{
         position: relative;
         background-color: rgba(88, 62, 62, 0.7);
@@ -468,34 +462,8 @@ border-color: #b1b112;
         justify-content: center;
         align-items: center;    
     }
-}
-@media (max-width:991px)
-{
-    .form-container1
-    {
-      position: absolute;
-        padding: 50px;
-        width: fit-content;
-        left: 30px;
-        padding: 10px;
+} */
 
-    }
-    .bg{
-      position: absolute;
-      width: 200%;
-    }
-    .pdf{
-      left: 0px;
-    }
-    .container
-    {
-        flex-direction: column;
-    }
-    .container .contactInfo,.contactForm
-    {
-        width:100%
-    }
-}
 
 
 
