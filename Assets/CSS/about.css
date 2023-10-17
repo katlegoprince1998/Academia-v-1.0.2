@@ -403,7 +403,7 @@ input, textarea{
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    background-size: contain;
+    background-size: cover;
 }
 
 .social-link {

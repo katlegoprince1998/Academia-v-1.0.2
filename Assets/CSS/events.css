@@ -406,6 +406,7 @@ input, textarea{
     justify-items: center;
     flex-direction: column;
     background-size: contain;
+   
     
 }
 
@@ -656,5 +657,21 @@ button:hover {
         border-top: 3px solid white;
         border-radius: 0px;
     }
+    .banner{
+        margin-top: 2rem;
+        height: 40vh;
+        background: #000106 url(../Images/events1.jpg);
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction:column;
+        background-size:cover;
+        object-fit: contain;
+
+        
+        
+
+        }
 }
  
