@@ -5,13 +5,11 @@
     --secondary-color: #fff;
     --active--color: #808000;
     --hover-aclor : #808000;
-    --card-text-color: #708090;
+    --card-text-color: #fff;
     --card-title-color: #808000;
     --display-5-color: #fff;
     --btn-color: #808000;
     --current-color:  	#808080;
-    --myCar-box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
-    
 }
 
 :root{
@@ -20,13 +18,11 @@
   --active--color: #808000;
   --hover-aclor : #808000;
   --card-text-color: rgb(139, 123, 123);
-  --card-title-color: #778899;
+  --card-title-color: black;
   --display-5-color: #050301;
   --btn-color: #808000;
-  --current-color:#808080;
-  --myCar-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --current-color:  	#808080;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -37,11 +33,18 @@ body {
     /* overflow: hidden; */
 }
 a.current{
-    color: var(--current-color);
+    color: var( --hover-aclor);
+    
  
 }
 .display-1{
     color: var(--display-5-color);
+}
+nav a:hover{
+    color: var(--active--color);
+} .collapse a:hover
+{
+    color: var( --hover-aclor);
 }
 .logo{
     width: 60px;
@@ -403,7 +406,12 @@ input, textarea{
     align-items: center;
     justify-items: center;
     flex-direction: column;
+<<<<<<< HEAD
+    background-size: contain;
+    
+=======
     background-size: cover;
+>>>>>>> 9bb9e67de8cfa3c992b1872152506af14f7b58ff
 }
 
 .social-link {
@@ -436,7 +444,7 @@ input, textarea{
 
 /* toggle */
 
-#icon{
+/* #icon{
     position: fixed;
     top: 50%;
     font-size: 30px;
@@ -448,7 +456,7 @@ input, textarea{
 }
 #icon:hover{
     transform: translateX(-20%);
-}
+} */
 
 
 @media only screen and (max-width: 600px) {

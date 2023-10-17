@@ -81,11 +81,19 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
   </head>
   <body style="background-color: var(--primary-color)">
     <!--Dark mode-->
+    <script>
+      window.onload = function() {
+         // Scroll to the top of the page
+         window.scrollTo(0, 0);
+     };
+ 
+   </script>
 
-    <img id="icon" src="./Images/moon.png" alt="sun" />
+   
 
     <nav
       style="
@@ -120,31 +128,34 @@
             <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
 
             <div class="dropdown">
-              <a href="#" class="nav-item nav-link">
-                Explore More
+              <a href="#" class="nav-item nav-link" >
+                Explore More 
                 <i class="fa-solid fa-circle-chevron-down"></i>
               </a>
 
               <div class="dropdown-options">
                 <a href="application/app1.html">Apply</a>
 
-                <a style="color:#808000;cursor: pointer;" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
                   FAQS
                 </a>
 
                 <a href="donations.html">Donations</a>
-              </div>
             </div>
-          </div>
+              </div>
+              <img id="icon" src="./Images/moon.png" alt="sun" style="width: 30px;"/>
+            </div> 
         </div>
+       
       </div>
+    
     </nav>
 
     <div id="banner"></div>
 
     <div class="px-4 py-5 my-5 text-center">
       <img
-        data-aos="fade-up"
+        
         class="d-block mx-auto mb-4"
         src="./Assets/Images/school_logo.png"
         alt=""
@@ -152,7 +163,7 @@
         height="57"
       />
 
-      <h1 data-aos="fade-up" class="display-5 fw-bold">
+      <h1 class="display-5 fw-bold">
         Why Choose <br />Mzamomtsha Primary School
       </h1>
 
@@ -641,6 +652,8 @@
     <script src="./Assets/chat/app.js"></script>
 
     <script>
+       // This JavaScript code will run when the page is loaded
+      
       AOS.init();
       var icon = document.getElementById("icon");
   
@@ -653,12 +666,7 @@
           }
       };
 
-      // This JavaScript code will run when the page is loaded
-      window.onload = function() {
-          // Scroll to the top of the page
-          window.scrollTo(0, 0);
-      };
-  
+     
     </script>
   </body>
 </html>

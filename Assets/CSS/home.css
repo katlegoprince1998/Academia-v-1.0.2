@@ -5,7 +5,7 @@
     --secondary-color: #fff;
     --active--color: #808000;
     --hover-aclor : #808000;
-    --card-text-color: #708090;
+    --card-text-color: #fff;
     --card-title-color: #808000;
     --display-5-color: #fff;
     --btn-color: #808000;
@@ -18,7 +18,7 @@
   --active--color: #808000;
   --hover-aclor : #808000;
   --card-text-color: rgb(139, 123, 123);
-  --card-title-color: #778899;
+  --card-title-color: black;
   --display-5-color: #050301;
   --btn-color: #808000;
   --current-color:  	#808080;
@@ -82,7 +82,10 @@ nav a{
     padding: 30px;
     color: var(--secondary-color);
 }
-
+.collapse a:hover
+{
+    color: var( --hover-aclor);
+}
 nav a:hover{
     color: var(--active--color);
 }
@@ -164,6 +167,9 @@ nav li:first-child{
     background-color: #4d4d0d;
 }
 .current{
+    color: var( --hover-aclor);
+}
+.current:hover{
     color: var(--current-color);
 }
 .social-link {
@@ -202,19 +208,10 @@ nav li:first-child{
 
 /* toggle */
 
-#icon{
-    position: fixed;
-    top: 50%;
-    font-size: 30px;
-    right: 0;
-    transition: all 0.3s ease;
-    color: orange;
-    width: 40px;
-    z-index: 999;
-}
-#icon:hover{
+
+/* #icon:hover{
     transform: translateX(-20%);
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .schoolName{
