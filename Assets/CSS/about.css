@@ -406,12 +406,7 @@ input, textarea{
     align-items: center;
     justify-items: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-size: contain;
-    
-=======
-    background-size: cover;
->>>>>>> 9bb9e67de8cfa3c992b1872152506af14f7b58ff
+    background-size:cover;
 }
 
 .social-link {
