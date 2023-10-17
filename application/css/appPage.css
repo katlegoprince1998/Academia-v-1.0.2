@@ -12,13 +12,7 @@ body{
    transform: translateZ(0);
    will-change: transform;
    height: 100vh;
-   overflow: hidden;
-}
-.move{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 20px;
+   overflow-x: hidden;
 }
 
 .bg 
@@ -38,11 +32,14 @@ padding: 30px;
 padding-top: 0;
 width: 43%;
 border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+   align-items: center;
    color: white;
   overflow: hidden; 
   height: auto;
-  left: 0;
- 
+  right:80px;
 
 }
 .header1
@@ -257,50 +254,6 @@ gap: 400px;
 margin-top: 10px;
 
 }
-@media screen and (max-width:600px) and (max-width:640px){
-    .form-container1
-    { 
-        width: 100%;
-        height: 10%;
-    }
-
-    
-    .header1 h2{
-        font-size: 20px;
-    }
-    .address h5 {
-        font-size: 15px;
-    }
-    .footer
-    { 
-        gap: 50px;
-    }
-    
-    .row1{
-        gap: 10px;
-    }
-    .row1 select
-    {
-        width:115%;
-    font-size: 12px;
-    }
-    .row1 .right .shortInput
-    {
-        width:115%;
-    font-size: 11px; 
-    }
-    .row1 input
-    {
-    width:115%;
-    font-size: 12px;
-    }
-    .left span
-    {
-        font-size: 12px;
-    }
-   
-}
-
 .footer .backBtn
 {
     padding: 6px;
@@ -437,88 +390,6 @@ border-color: #b1b112;
   {
     display: none;
   }
-
-/* @media screen and (max-width:600){
-    .form-container-one{
-        position: relative;
-        background-color: rgba(88, 62, 62, 0.7);
-        padding: 10px;
-        padding-top: 0;
-        width: 20%;
-      
-        height: auto;
-    }
-    .header-one{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0,0,0,0.945);
-    }
-    .section-one{
-        position: relative;
-        margin-top: 76px;
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;    
-    }
-}
-@media (max-width:991px)
-{
-    .form-container1
-    {
-      position: absolute;
-        padding: 50px;
-        width: fit-content;
-        left: 30px;
-        padding: 10px;
-
-    }
-    .bg{
-      position: absolute;
-      width: 200%;
-    }
-    .pdf{
-      left: 0px;
-    }
-    .container
-    {
-        flex-direction: column;
-    }
-    .container .contactInfo,.contactForm
-    {
-        width:100%
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*.backgroundcover
 {
     height: 100vh;
@@ -569,3 +440,51 @@ border-color: #b1b112;
 span{
     color: pink;
 }*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+    .form-container1
+{
+position: relative;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 30px;
+padding-top: 0;
+width: 83%;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+   align-items: center;
+   color: white;
+  overflow: hidden; 
+  height: auto;
+  right:400px;
+
+}
+    
+    .home_link{
+        margin: 120px 0 0 290px;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) { 
+  
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+   
+   
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ } 

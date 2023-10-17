@@ -38,7 +38,7 @@ function Back()
 }
 //Leads to the page containing Contact Details
 function Next() {
-    location.href="app5.html";    
+    location.href="app8.html";    
 }
 function uploadID() {
   const query = window.location.search;
