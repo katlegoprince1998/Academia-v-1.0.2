@@ -33,9 +33,7 @@ body {
     /* overflow: hidden; */
 }
 a.current{
-    color: var( --hover-aclor);
-    
- 
+    color: var(  --card-title-color);
 }
 .display-1{
     color: var(--display-5-color);
