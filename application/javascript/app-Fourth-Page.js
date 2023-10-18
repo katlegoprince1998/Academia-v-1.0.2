@@ -69,7 +69,7 @@ function Next() {
     //     location.href="app9.html"; 
         
     // }
-    location.href="app6.html"; 
+    location.href="app9.html"; 
 
 }
 
