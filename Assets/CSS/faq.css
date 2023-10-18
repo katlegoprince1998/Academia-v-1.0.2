@@ -22,9 +22,9 @@
     padding: 2rem;
     display: flex;
     gap: 1rem;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     cursor: pointer;
-    width: 70%;
+    width: auto;
   }
   
   .faqs:hover {
@@ -56,6 +56,13 @@
   
   .faqs.open .faq_answer {
     display: block;
+  }
+
+  @media(max-width: 991px) {
+    .faq_question-answer {
+      width: 300px;
+    }
+    
   }
   
  

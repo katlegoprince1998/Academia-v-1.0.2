@@ -397,13 +397,13 @@ input, textarea{
 #banner{
     margin-top: 2rem;
     height: 50vh;
-    background: #000106 url(../Images/events1.jpg);
-    background-attachment: fixed;
+    background: #000106 url(../Images/events1.jpg)no-repeat;
+     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    background-size: contain;
+    background-size: cover;
     filter: brightness(90%);
    
     
@@ -643,7 +643,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
     .full-chat-block {
         width: 100%;
         border-radius: 0px;
@@ -660,21 +660,19 @@ button:hover {
         border-top: 3px solid white;
         border-radius: 0px;
     }
-    .banner{
+    #banner{
         margin-top: 2rem;
         height: 40vh;
-        background: #000106 url(../Images/events1.jpg);
-        background-attachment: fixed;
+        background:  url(../Images/events2.jpg)no-repeat center center;
+        /* background-attachment:fixed; */
         display: flex;
         align-items: center;
         justify-items: center;
         flex-direction:column;
-        background-size:cover;
-        object-fit: contain;
-
-        
-        
-
+        background-size: cover;
+        /* object-fit: contain; */
         }
+
+        
 }
  
