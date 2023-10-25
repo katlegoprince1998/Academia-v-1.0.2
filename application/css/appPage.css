@@ -513,22 +513,14 @@ margin-top: 10px;
  }  */
  
  /* Large devices (laptops/desktops, 992px and up) */
-<<<<<<< HEAD
-  /* @media only screen and (min-width: 992px) {
-=======
-<<<<<<< HEAD
- @media only screen and (min-width: 991px) {
-=======
-  @media only screen and (min-width: 992px) {
->>>>>>> ccc909b17b1001b938781890af3f0c69577d8cb0
->>>>>>> 23a70c07e93ef36e0fb4b07b02e9d9e93ea4323f
-
- }  */
  
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- /* @media only screen and (min-width: 1200px) {
 
- }  */
+ @media only screen and (min-width: 991px) {
+
+ }
+
+
+
  @media screen and (max-width:600px) and (max-width:640px){
     .form-container1
     {
