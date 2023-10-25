@@ -42,7 +42,7 @@ nav a:hover{
     color: var(--active--color);
 } .collapse a:hover
 {
-    color: var( --hover-aclor);
+    color: var( --card-title-color);
 }
 .logo{
     width: 60px;

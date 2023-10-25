@@ -508,7 +508,7 @@ button:hover {
 }
 .collapse a:hover
 {
-    color: var( --hover-aclor);
+    color: var( --card-title-color);
 }
 .content {
     max-height: 0;

@@ -86,7 +86,7 @@ nav li:first-child{
 }
 .collapse a:hover
 {
-    color: var( --hover-aclor);
+    color: var( --card-title-color);
 }
 .dropdown {
     display: inline-block;
