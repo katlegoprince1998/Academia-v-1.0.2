@@ -62,26 +62,18 @@ function Next() {
     // PostCode:pCode,PostOpt:pOpt,PostCode2:poCode2,Sub2:surburb2,Box2:box2}]
     let items=[{Add1:add1,Add2:add2,Add3:add3,
         PostCode:pCode,PostOpt:pOpt,PostCode2:poCode2,Sub2:surburb2,Box2:box2}]
-    //localStorage.setItem("Contact",JSON.stringify(items));
-    // if (add1==""||add2==""||add3==""||pCode==""||pOpt=="")
-    //||box==""||surburb=="") 
-    // {
-        // alert("Please enter all your details");
-        // return false;
-        /*if (email != confirmEmail) {
-            alert("Email addresses do not match");
-            return false;
-        };
-        if ( phoneNumber != confirmNumber) {
-            alert("Phone Numbers do not match");
-            return false;  
-        }*/ 
+    localStorage.setItem("Contact",JSON.stringify(items));
+     if (add1==""||add2==""||add3==""||pCode==""||pOpt=="") 
+     {
+         alert("Please enter all your details");
+         return false;
+        
        
-    // } else {
-    //     localStorage.setItem("Contact",JSON.stringify(items));
-    //     location.href="app4.html";    
-    // }
-    location.href="app4.html";   
+     } else {
+         localStorage.setItem("Contact",JSON.stringify(items));
+        location.href="app4.html";    
+    }
+  
          
 }
 

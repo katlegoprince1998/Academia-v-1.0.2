@@ -51,22 +51,17 @@ console.log(localStorage)
 let items=[{southAfrican:citizen,ID:idNum,PassPort:passport,dateOfBirth:dob,Naams:Names,Surnaam:Surname,
       Initials:initials,Gender:gender,Lang:language,Race:race,Title:title}];
 
-//adding to local storage and display them
-//NB:JSON.stringify():converts to plain English(string)
-//Personal:Collection Name
-//localStorage.setItem("Personal",JSON.stringify(items));
 
-//to retrieve data,use getItem() method
-//localStorage.getItem()
-//    if (citizen==""||dob==""||Names==""||Surname==""||initials==""||race==""||language==""||title==""||gender=="") {
-//         alert("Please enter all your details");
-//         return false;
+      if (Names==""||citizen==""||idNum==""||dob==""||Surname==""||initials==""||gender==""||language==""||race==""||title=="") {
+        alert("Please enter all your details");
+         return false;
+      }
+      else{
+        localStorage.setItem("Personal",JSON.stringify(items));
+
+        location.href="app3.html"; 
+      }
         
-//     } else {
-//         localStorage.setItem("Personal",JSON.stringify(items));
-//         location.href="app3.html";    
-//     }
-location.href="app3.html";    
     
 }
 
