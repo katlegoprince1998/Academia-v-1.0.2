@@ -84,7 +84,7 @@ nav a{
 }
 .collapse a:hover
 {
-    color: var( --hover-aclor);
+    color: var( --card-title-color);
 }
 nav a:hover{
     color: var(--active--color);
