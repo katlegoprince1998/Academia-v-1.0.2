@@ -404,6 +404,17 @@ border-color: #b1b112;
 
 
  
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ 
+
+ @media only screen and (min-width: 991px) {
+
+ }
+
+
+
+
  @media screen and (max-width:600px) and (max-width:640px){
     .form-container1
     {
@@ -484,3 +495,87 @@ gap: 100px;
 }
 
 }
+
+
+/* screen and (max-width:600px) and (max-width:640px) */
+
+/* @media  screen and (min-width:650px) and(max-width: 768px) {
+   
+    .form-container1
+    {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+           align-items: center;
+           display: flex;
+           width:60%;
+           height: auto;
+           margin-top: 10px;
+      
+     
+    }
+    
+    .row1 .left span{
+        font-size: 12px;
+        /* position: absolute; */
+    
+    /* .row1 .right .shortInput
+{
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    
+}
+.right input
+{
+    width: 100%; 
+    height: 25px; 
+    font-size: 12px;
+    /* padding: 13px; */
+/* 
+.right select
+{
+    width: 100%; 
+    height: 25px; 
+    
+    font-size: 12px;
+    
+}
+
+.header1 h2{
+    font-size: 30px;
+
+}
+.footer
+{position: relative;
+padding: 2px;
+display: flex;
+gap: 100px;
+
+
+} 
+.footer .backBtn
+{
+    
+   width: 35%;
+   
+   height: 35px;
+   padding-left: 10px;
+    padding-right: 10px; 
+    align-items: center;
+    
+   
+}
+.footer .nxtBtn
+{
+    
+   width: 35%;
+   
+   height: 35px;
+   padding-left: 10px;
+    padding-right: 10px; 
+    align-items: center;
+    
+   
+}
+} */
