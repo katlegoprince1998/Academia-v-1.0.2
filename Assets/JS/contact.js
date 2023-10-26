@@ -1,3 +1,5 @@
+
+
 function sendMail() {
   let Name=document.getElementById("name").value;
   let Email=document.getElementById("email").value;
@@ -30,4 +32,5 @@ else{
   }
 
 }
+
 
