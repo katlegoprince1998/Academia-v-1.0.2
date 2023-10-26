@@ -42,7 +42,7 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -133,10 +133,9 @@
     <main>
       <div class="payment-form">
         <h1>Make Donation</h1>
-        <form id="form">
+        <form>
           <label for="card-number">Card Number</label>
           <input
-            class="userInput"
             type="number"
             id="card-number"
             name="card-number"
@@ -146,7 +145,6 @@
 
           <label for="card-holder">Card Holder Name</label>
           <input
-          class="userInput"
             type="text"
             id="card-holder"
             name="card-holder"
@@ -158,7 +156,6 @@
             <div class="form-group">
               <label for="expiry">Expiry Date</label>
               <input
-              class="userInput"
                 type="number"
                 id="expiry"
                 name="expiry"
@@ -169,7 +166,6 @@
             <div class="form-group">
               <label for="cvv">CVV</label>
               <input
-              class="userInput"
                 type="number"
                 id="cvv"
                 name="cvv"
@@ -180,14 +176,13 @@
           </div>
           <label for="card-holder">Amount</label>
           <input
-          class="userInput"
             type="number"
-            id="amount"
+            id="card-holder"
             name="amount"
             placeholder="R200 000"
             required
           />
-          <button id="btn" type="button">Donate</button>
+          <button type="submit">Donate</button>
         </form>
       </div>
     </main>
@@ -539,9 +534,6 @@
     <script src="https://use.fontawesome.com/f14fe45cb3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="sweetalert2.min.js"></script>
     <script src="./Assets/JS/app.js"></script>
     <script src="./Assets/chat/assets/js/Chat.js"></script>
     <script src="./Assets/chat/app.js"></script>
@@ -565,6 +557,5 @@
       };
   
     </script>
-  
   </body>
 </html>
