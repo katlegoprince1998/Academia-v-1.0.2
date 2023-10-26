@@ -9,7 +9,12 @@ function sendMail() {
     message: Message
   };
 if (Name==""||Email==""||Message=="") {
-  alert("Please enter all the details")
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Please ensure all values are entered',
+   
+  })
   
 }
 else{
@@ -23,7 +28,12 @@ else{
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("Your message sent successfully!!")
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank you!',
+          text: 'Your enquiry or suggestion will be reviewed!',
+         
+        })
 
     })
     .catch(err=>console.log(err));
