@@ -4,6 +4,11 @@ function sendMail() {
   let Name=document.getElementById("name").value;
   let Email=document.getElementById("email").value;
   let Message=document.getElementById("message").value;
+  
+
+
+  
+  var emailError = document.getElementById("email-error");
 
   var params = {
     name: Name,
@@ -11,9 +16,12 @@ function sendMail() {
     message: Message
   };
 if (Name==""||Email==""||Message=="") {
-  alert("Please enter all the details")
-  
+
+ 
+
+    
 }
+
 else{
 
   const serviceID ="service_ydftyfp";
@@ -25,12 +33,31 @@ else{
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
         console.log(res);
-        alert("Your message sent successfully!!")
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank you!',
+          text: 'Your enquiry or suggestion will be reviewed!',
+         
+        })
 
     })
     .catch(err=>console.log(err));
   }
 
+
+
+  if(!email.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+    emailError.innerHTML = "Please enter a valid email";
+    return false;
+    
+  }
+  emailError.innerHTML = "";
+  return true;
+
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29

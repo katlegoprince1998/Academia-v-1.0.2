@@ -489,6 +489,7 @@ function uploadParentsId() {
       location.href="../../home.html";
 
 
+<<<<<<< HEAD
     //     $("#finSub").click(function() {
        
         
@@ -502,6 +503,8 @@ function uploadParentsId() {
           
     //   }) 
  
+=======
+>>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29
     //     let passWord=document.getElementById("password-field").value
     //    var passwordInput2 = document.getElementById("bttn2").value;
     //      if (passWord!=passwordInput2) {
@@ -548,6 +551,11 @@ function uploadParentsId() {
         //             //loader.style.display="none";
         //             alert(er)
         //         });
+<<<<<<< HEAD
+=======
+
+        console.log("hi");
+>>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29
 
         
     }

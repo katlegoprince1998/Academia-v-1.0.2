@@ -209,15 +209,16 @@
                 <h2 class="head">Send Message</h2>
 
                 <div class="inputBox">
-                    <input type="text"  required="required"  id="name">
+                    <input type="text" id="name" required>
 
                     <span>Full Name</span>
                 </div>
 
                 <div class="inputBox">
-                  <input type="email"  required id="email" >
+                  <input type="email" id="email" required spellcheck="false" onkeyup="sendMail()">
 
                   <span>Email</span>
+                  <p id="email-error"></p>
                 </div>
 
                 <div class="inputBox">
@@ -228,7 +229,7 @@
 
                 <div class="inputBox">
                     <!-- <input type="submit" name="" value="Send" class="send"> -->
-                    <button class="send" onclick="sendMail()">Submit</button>
+                    <button type="button" class="send" onclick="sendMail()">Submit</button>
                 </div>
             <div>
           </div>
@@ -525,7 +526,22 @@
   </div>
 </footer>
 
-  
+  <!-- <script>
+    var emailField = document.getElementById("email-error");
+    var emailField = document.getElementById("email");
+    var emailError = document.getElementById("email-error");
+
+    function validateEmail() {
+      if (!email.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,2}$/)) {
+        emailError.innerHTML = "Please enter a valid email";
+        return false;
+        
+      }
+      emailError.innerHTML = "";
+      return true;
+    } -->
+
+  <!-- </script> -->
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
           integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
@@ -536,6 +552,9 @@
   <script src="https://use.fontawesome.com/f14fe45cb3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="sweetalert2.min.js"></script>
   <script src="./Assets/JS/app.js"></script>
   <script src="./Assets/chat/assets/js/Chat.js"></script>
   <script src="./Assets/chat/app.js"></script>

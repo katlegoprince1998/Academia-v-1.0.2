@@ -336,6 +336,15 @@ input, textarea{
     color: var(--display-5-color);
 }
 
+#email-error{
+    position: relative;
+    top: 100%;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+}
+
 
 
 
