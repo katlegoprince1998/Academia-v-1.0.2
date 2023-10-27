@@ -44,6 +44,13 @@ let language=document.getElementById("languageOpt").value;
 let race=document.getElementById("raceOpt").value;
 let title=document.getElementById("titleOpt").value;
 let passport=document.getElementById("passP").value;
+;
+
+if (idNum.length!=13) {
+    alert("Invalid ID number.");
+    return false;
+    
+}
 
 //LOCAL STORAGE
 console.log(localStorage)
@@ -65,6 +72,14 @@ let items=[{southAfrican:citizen,ID:idNum,PassPort:passport,dateOfBirth:dob,Naam
     
 }
 
+
+function validateId() {
+    let idNum=document.getElementById("idNo").value; 
+    if (idNum.length!=13) {
+        alert("Invalid ID number.")
+        
+    }
+}
 
 function displayPersonal()
 {

@@ -146,6 +146,7 @@
 
           <label for="card-holder">Card Holder Name</label>
           <input
+          oninput="this.value=(this.value.match('[a-zA-Z]+'))"
           class="userInput"
             type="text"
             id="card-holder"

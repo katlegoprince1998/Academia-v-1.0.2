@@ -1,5 +1,7 @@
 
 
+
+
 function sendMail() {
   let Name=document.getElementById("name").value;
   let Email=document.getElementById("email").value;
@@ -55,9 +57,3 @@ else{
   return true;
 
 }
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29

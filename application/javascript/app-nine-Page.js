@@ -489,73 +489,20 @@ function uploadParentsId() {
       location.href="../../home.html";
 
 
-<<<<<<< HEAD
-    //     $("#finSub").click(function() {
+
+        $("#finSub").click(function() {
        
         
         
-    //         Swal.fire({
-    //           icon: 'success',
-    //           title: 'Application received',
-    //           text: 'We will get back to you after 4 days',
+            Swal.fire({
+              icon: 'success',
+              title: 'Application received',
+              text: 'We will get back to you after 4 days',
              
-    //         })
+            })
           
-    //   }) 
+      }) 
  
-=======
->>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29
-    //     let passWord=document.getElementById("password-field").value
-    //    var passwordInput2 = document.getElementById("bttn2").value;
-    //      if (passWord!=passwordInput2) {
-    //      alert("Passwords do not match")  ;
-    //     return false;
-    //     }
-        // auth.createUserWithEmailAndPassword(email,passWord) //allows to create accounts in authentication
-        //         .then((feedback) => {
-        //             // Signed in 
-        //             var user = feedback.user;
-        //             console.log(user)
-
-        //             //storing data in database
-        //             //.collection:create a folder named users
-        //             //.doc:document //Specify what to send to the collection
-        //             //.set:adding
-        //             db.collection("studentApplication").doc(auth.currentUser.uid).set({
-        //                 //Name and Surname are "labels"
-        //                 PersonalDetails:dataP,
-        //                 ContactDetails:dataC,
-        //                 NextOfKinDetails:dataK,
-        //                 PreviousSchoolDetails:dataS,
-        //                 PreviousInstituitionDetails:dataPI,
-        //                 SubjectDetails:dataSB,
-        //                 CourseDetails:dataCO
-        //             }).then(()=>{
-        //                 localStorage.clear();
-        //                 setTimeout(() => {
-        //                     location.href="app9.html"; 
-        //                     window.location.href = "app9.html?User=" + auth.currentUser.uid + "";   
-        //                 }, 2000);
-        //                 console.log("submitted")
-                        
-        //             })
-                   
-                   
-                    
-        //             // ...
-        //         })
-        //         .catch((er) => {
-        //             /*var errorCode = er.code;
-        //             var errorMessage = er.message;*/
-        //             // ..
-        //             //loader.style.display="none";
-        //             alert(er)
-        //         });
-<<<<<<< HEAD
-=======
-
-        console.log("hi");
->>>>>>> 8b313b4448ab5fefe0440d0f6a2b3a163ed32f29
 
         
     }
