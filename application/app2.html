@@ -83,7 +83,7 @@
              </div>
               
              <div class="right">
-               <input type="text" placeholder="Enter Names" id="names" onchange="init()">
+               <input type="text" placeholder="Enter Names" id="names"  oninput="this.value=(this.value.match('[a-zA-Z]+'))" onchange="init()">
              </div>
                </div>
                <div class="row1">
@@ -92,7 +92,7 @@
              </div>
               
              <div class="right">
-               <input type="text" placeholder="Enter Surname" id="surname">
+               <input type="text" placeholder="Enter Surname"  oninput="this.value=(this.value.match('[a-zA-Z]+'))" id="surname">
              </div>
                </div>
                <div class="row1">

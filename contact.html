@@ -210,7 +210,7 @@
                 <h2 class="head">Send Message</h2>
 
                 <div class="inputBox">
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" required  oninput="this.value=(this.value.match('[a-zA-Z]+'))">
 
                     <span>Full Name</span>
                 </div>
