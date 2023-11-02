@@ -232,7 +232,25 @@ height: fit-content;
 .contact-details h5{
 
 padding: 20px 0 0 20px;
+/* left: 200px; */
 
+}
+
+.cotainer{
+    position: relative;
+    /* display: flex; */
+    /* align-content: center; */
+    /* align-items: center;
+   
+    flex-direction: column; */
+
+    left: 200px;
+    
+}
+.cotainer h5{
+    position: relative;
+    right: 0px;
+    
 }
 .contact-details input{
 
@@ -265,6 +283,14 @@ font-size: 20px;
 .dash-right .contact-details p{
 
     padding-left: 25px;
+    
+
+}
+.contact-details h5{
+
+   position: relative;
+   display: flex;
+   align-items: flex-start;
     
 
 }

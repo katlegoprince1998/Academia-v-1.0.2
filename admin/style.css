@@ -170,6 +170,7 @@ body.dark {
 }
 .sidebar .nav_link.active {
 background-color: var( --active--color);
+color: var(--white-color);
 }
 
 .sidebar.close .navlink {
