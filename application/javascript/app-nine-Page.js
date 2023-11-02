@@ -21,9 +21,6 @@ let tr=document.createElement("tr");
 
 // 
 
-get information to te table
-
-
 
 function displayInfo2() {
     let storage= localStorage.getItem("Personal");
@@ -470,43 +467,42 @@ function uploadParentsId() {
 
         let storageC= localStorage.getItem("Contact"); 
         let dataC=JSON.parse(storageC);
-        let email=dataC[0].Email;
-
+      
         let storageK= localStorage.getItem("NextOfKin");
         let dataK=JSON.parse(storageK);
 
-        let storageS= localStorage.getItem("schoolAttended");
-        let dataS=JSON.parse(storageS);
-
-        let storagePI= localStorage.getItem("PreviousInstituition");
         
-        let dataPI=JSON.parse(storagePI);
-
-        const subjectsCO=localStorage.getItem("Courses");
-        const dataCO=JSON.parse(subjectsCO);
-
-        const subjectsSB=localStorage.getItem("Subjects");
-        const dataSB=JSON.parse(subjectsSB);
-      alert("Successfully submitted,We'll get back to you");
-      location.href="../../home.html";
-
-
-
-        $("#finSub").click(function() {
-       
+        db.collection("studentApplication").doc().set({
+          //Name and Surname are "labels"
+          PersonalDetails:dataP,
+          ContactDetails:dataC,
+          NextOfKinDetails:dataK,
         
+      }).then(()=>{
+          alert("Successfully submitted,We'll get back to you");
+        Swal.fire({
+          icon: 'success',
+          title: 'Application received',
+          text: 'We will get back to you after 4 days',
+         
+        })
+        localStorage.clear();
+        setTimeout(() => {
+          location.href="../home.html";
+            //window.location.href = "app9.html?User=" + auth.currentUser.uid + "";   
+        }, 3000);
         
-            Swal.fire({
-              icon: 'success',
-              title: 'Application received',
-              text: 'We will get back to you after 4 days',
-             
-            })
-          
-      }) 
- 
+    })
+    .catch((er) => {
+      /*var errorCode = er.code;
+      var errorMessage = er.message;*/
+      // ..
+      //loader.style.display="none";
+      alert(er)
+  });
 
         
+      // alert("Successfully submitted,We'll get back to you");
+      // location.href="../../home.html";
+  
     }
- 
-    

@@ -22,7 +22,7 @@ function copyToHtml(student)
 }function addEvents() {
 
   console.log("clicked")
-  const storage = firebase.storage().ref("EventsCover")
+  const storage = firebase.storage().ref("EventsCover");
   let startTime=document.getElementById("time").value;
   let endTime=document.getElementById("time2").value;
   let eventsCover = document.getElementById("image-file").files[0]
@@ -76,3 +76,31 @@ let month=document.getElementById("month").value;
   })
 
 }
+// let div1 = '';  
+// let html1 = '';
+// function takeToHtml() {
+//   let bookDiv=document.getElementById("usr")
+//   let storage= localStorage.getItem("Personal");
+//   let data=JSON.parse(storage);
+//   let storage1= localStorage.getItem("Contact"); 
+//   let data2=JSON.parse(storage1);
+//   let storage3= localStorage.getItem("NextOfKin");
+//     let data3=JSON.parse(storage3);
+//     document.getElementById("name")=data[0].Names;
+//     document.getElementById("surname")=data[0].Surnaam;
+//     document.getElementById("phone")=data3[0].Phone;
+//     document.getElementById("idNum")=data[0].ID;
+
+//   div=
+//   `
+//   <tr>
+//       <td id="name">${data[0].Naams}</td>
+//       <td id="surname">${data[0].Surnaam}</td>
+//       <td id="phone">${data3[0].Phone}</td>
+//       <td id="idNum">${data[0].ID}</td>
+//     </tr>
+//   `
+//   html1 +=div1;
+//   bookDiv.innerHTML=html1;
+  
+// }
