@@ -46,6 +46,12 @@ function uploadID() {
 	const ID = url.get("User");
 
   let idDoc=document.getElementById("ID").files[0];
+//local storage
+  // let items=[{idDocument:idDoc}];
+  // localStorage.setItem("IdentityDoc",JSON.stringify(items));
+
+
+
     console.log(results);
     let today=new Date();
     let time=today.getTime();
@@ -104,6 +110,10 @@ function uploadGuardianID() {
 	const url = new URLSearchParams(query);
 	const ID = url.get("User");
     let guardian=document.getElementById("parentsId").files[0];
+
+    //local storage
+  //   let items=[{GardianID:guardian}];
+  // localStorage.setItem("GardianIdentityDoc",JSON.stringify(items));
     
     let today=new Date();
     let time=today.getTime();

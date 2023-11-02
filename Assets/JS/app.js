@@ -4,6 +4,7 @@ const cardNumber = document.getElementById("card-number");
 const userInput = document.getElementsByClassName("userInput");
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
+const btnDonateAmt = document.querySelector('#amount');
 
 $("#btn").click(function () {
   let cardNumber = $("#card-number").val();
@@ -62,6 +63,7 @@ navItemHover.forEach((item) => {
 
   });
 });
+// Donate keyboard events
 // Donate keyboard events
 btnDonateAmt.addEventListener('keydown', function (e) {
 	let cardNumber = $('#card-number').val();

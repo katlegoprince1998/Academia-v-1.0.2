@@ -120,30 +120,30 @@
 <!-- JavaScript Bundle with Popper -->
 
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
-<script>
-//Connects to database,Changes everytime
-const firebaseConfig = {
-apiKey: "AIzaSyB0tDAbZkpLU87qZIQyLH8Bun_upJgzdac",
-authDomain: "gns-enterprise-1364c.firebaseapp.com",
-projectId: "gns-enterprise-1364c",
-storageBucket: "gns-enterprise-1364c.appspot.com",
-messagingSenderId: "651977652775",
-appId: "1:651977652775:web:2ed271b4a534c92b0aac02",
-measurementId: "G-V6F7KN3RKL"
-};
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+ <script>
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-    db.settings("timestampsInSnapshots:true")
-    firebase.analytics();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAyGwDbGGLkdEPvEqjLNCyXUpXCoYe1T_0",
+  authDomain: "university-application-4ae5e.firebaseapp.com",
+  projectId: "university-application-4ae5e",
+  storageBucket: "university-application-4ae5e.appspot.com",
+  messagingSenderId: "157084175772",
+  appId: "1:157084175772:web:01d9060509782a65624c59",
+  measurementId: "G-CBCBTMHPE2"
+};
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     const auth = firebase.auth();
+     const db = firebase.firestore();
+     db.settings("timestampsInSnapshots:true")
+     firebase.analytics();
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 

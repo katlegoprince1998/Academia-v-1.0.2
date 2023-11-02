@@ -272,7 +272,7 @@ font-size: 20px;
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
   }
   
   #customers td, #customers th {
@@ -291,6 +291,11 @@ font-size: 20px;
     background-color: var( --secondary-color);
     color: white;
   }
+  #customers #head11{
+
+   width: 300px; 
+  }
+  
 .right
 {
     width: 70%;
