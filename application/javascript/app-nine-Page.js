@@ -19,7 +19,9 @@ let tr=document.createElement("tr");
 }
 */
 
+// 
 
+get information to te table
 
 
 
