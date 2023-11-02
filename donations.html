@@ -136,6 +136,7 @@
         <form id="form">
           <label for="card-number">Card Number</label>
           <input
+          autocomplete="off"
             class="userInput"
             type="number"
             id="card-number"
@@ -146,6 +147,7 @@
 
           <label for="card-holder">Card Holder Name</label>
           <input
+          autocomplete="off"
           oninput="this.value=(this.value.match('[a-zA-Z]+'))"
           class="userInput"
             type="text"
@@ -159,6 +161,7 @@
             <div class="form-group">
               <label for="expiry">Expiry Date</label>
               <input
+              autocomplete="off"
               class="userInput"
                 type="number"
                 id="expiry"
@@ -170,6 +173,7 @@
             <div class="form-group">
               <label for="cvv">CVV</label>
               <input
+              autocomplete="off"
               class="userInput"
                 type="number"
                 id="cvv"
@@ -181,6 +185,7 @@
           </div>
           <label for="card-holder">Amount</label>
           <input
+          autocomplete="off"
           class="userInput"
             type="number"
             id="amount"
