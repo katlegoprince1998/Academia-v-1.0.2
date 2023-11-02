@@ -306,6 +306,50 @@ bottom: 500px;
 
 }
 
+/*  Donations    */
+.dash-right h1{
+  color: var(--active--color);
+  font-family: 'Times New Roman', Times, serif;
+}
+.data-right{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+}
+.data-right table{
+  width: 800px;
+  height: 50px;
+}
+table{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+table th{
+  color: var(--grey-color);
+}
+tbody td{
+  color: var(--active--color);
+}
+.total-donators{
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 290px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 12px;
+  justify-content: center;
+}
+.total-donators h1{
+   font-size: 25px;
+}
+.total-donators span{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--grey-color);
+}
+/*  Donations    */
+
 
 
 

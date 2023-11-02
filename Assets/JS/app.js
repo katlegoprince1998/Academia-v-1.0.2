@@ -98,3 +98,7 @@ btnDonateAmt.addEventListener('keydown', function (e) {
 	}
 	
 });
+
+
+////////////////////////////////////////////////////////////////
+//charts
