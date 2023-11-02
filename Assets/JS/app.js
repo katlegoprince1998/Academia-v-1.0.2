@@ -4,6 +4,7 @@ const cardNumber = document.getElementById("card-number");
 const userInput = document.getElementsByClassName("userInput");
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
+// let form = $("#form");
 
 $("#btn").click(function () {
   let cardNumber = $("#card-number").val();
@@ -11,6 +12,7 @@ $("#btn").click(function () {
   let expiry = $("#expiry").val();
   let cvv = $("#cvv").val();
   let amount = $("#amount").val();
+ 
 
   
 
@@ -24,6 +26,8 @@ $("#btn").click(function () {
 
     })
   } else {
+    submitData();
+   
     Swal.fire({
       icon: 'success',
       title: 'Thank you for your contribution',
@@ -33,7 +37,18 @@ $("#btn").click(function () {
   }
 })
 
-// navigation bar
+function submitData(){
+  let formData = new FormData(form);
+  const data = {};
+  formData.forEach((value, key) => {
+    data[key] = value;
+  });
+  const jasonData = JSON.stringify(data);
+  console.log(jasonData);
+}
+
+
+// // navigation bar
 
 const navItemHover = document.querySelectorAll('.nav-item');
 
