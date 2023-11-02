@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="admin.css">
   </head>
-  <body>
+  <body onload="displayInfo2(),displayInfo3(),displayInfo4()">
 
     <!-- navbar -->
     <nav class="navbar">
@@ -173,56 +173,62 @@
     <div class="dash-container">
     <div class="dash-right">
       <div class="application">
-      <p>Anele</p>
+      
 
     </div>
     </div>
     <div class="dash-right">
-      <p>Ashley</p>
+   
 
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>id no</th>
-          <th>Suject</th>
-        </tr>
+      <table class="table" id="table">
+        <thead class="thead-dark">
+      
+          <table id="customers">
+            
+            <tr  >
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Phone No</th>
+              <th id="head11">ID No</th>
+
+            </tr>
+          
+          <tbody id="usr">
+          
+          </tbody>
+            
+            </table>
+         <!-- <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Position</th>
+            <th scope="col">Update Info</th>
+          </tr>-->
+        </thead>
+        <!--<tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Cynthia</td>
+            <td>Dladla</td>
+            <td>Junior Developer</td>
+            <td><button class="button">Update</button> <button  class="button">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Nkosi</td>
+            <td>Internship</td>
+            <td><button  class="button">Update</button> <button  class="button">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Thapelo</td>
+            <td>Mbambo</td>
+            <td>Senior Developer</td>
+            <td><button  class="button">Update</button> <button  class="button">Delete</button></td>
+          </tr>-->
+        </tbody>
       </table>
 
     </div>
@@ -295,5 +301,6 @@ const firebaseConfig = {
  
     <script src="script.js"></script>
     <script src="admin.js"></script>
+    <script src="../application/javascript/app-nine-Page.js"></script>
   </body>
 </html>
