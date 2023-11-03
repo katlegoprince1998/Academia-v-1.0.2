@@ -86,12 +86,14 @@ btnDonateAmt.addEventListener('keydown', function (e) {
       expiry.substring(2, 4) < 23 ||
       cvv.length != 3
     ) {
+      
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
         text: 'Please ensure all values are entered or the card number has 16 digits',
       });
     } else {
+      submitData(); 
       Swal.fire({
         icon: 'success',
         title: 'Thank you for your contribution',
