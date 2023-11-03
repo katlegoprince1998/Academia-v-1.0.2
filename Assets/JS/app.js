@@ -12,12 +12,13 @@ $("#btn").click(function () {
   let expiry = $("#expiry").val();
   let cvv = $("#cvv").val();
   let amount = $("#amount").val();
+  
  
 
   
 
   if (cardNumber == "" || cardHolder == "" || expiry == "" || cvv == "" || amount == "" || cardNumber.length!=16 || expiry.substring(0,2) > 12 || 
-  expiry.substring(2,4) < 23 || cvv.length != 3) {
+  expiry.substring(2,4) < 23 || cvv.length != 3 || cardHolder.length < 3) {
   
     Swal.fire({
       icon: 'error',
