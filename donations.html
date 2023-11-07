@@ -133,67 +133,44 @@
     <main>
       <div class="payment-form">
         <h1>Make Donation</h1>
-        <form id="form">
-          <label for="card-number">Card Number</label>
-          <input
-          autocomplete="off"
-            class="userInput"
-            type="number"
-            id="card-number"
-            name="card-number"
-            placeholder="1234 5678 9012 3456"
-            required
-          />
-
-          <label for="card-holder">Card Holder Name</label>
-          <input
-          autocomplete="off"
-          oninput="this.value=(this.value.match('[a-zA-Z]+'))"
-          class="userInput"
-            type="text"
-            id="card-holder"
-            name="card-holder"
-            placeholder="John Doe"
-            required
-          />
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="expiry">Expiry Date</label>
-              <input
-              autocomplete="off"
-              class="userInput"
-                type="number"
-                id="expiry"
-                name="expiry"
-                placeholder="MM/YY"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="cvv">CVV</label>
-              <input
-              autocomplete="off"
-              class="userInput"
-                type="number"
-                id="cvv"
-                name="cvv"
-                placeholder="123"
-                required
-              />
-            </div>
+        <form id="form" class="form" autocomplete="off">
+          <div class="form-control">
+            <label for="cardNUm">Card Number</label>
+            <input type="number" placeholder="1234..." id="cardNUm" />
+            <img class="happy" src="./Assets/icons/happy.png">
+            <img class="sad" src="./Assets/icons/sad-face.png">
+            
+            <small>Error message</small>
           </div>
-          <label for="card-holder">Amount</label>
-          <input
-          autocomplete="off"
-          class="userInput"
-            type="number"
-            id="amount"
-            name="amount"
-            placeholder="R200 000"
-            required
-          />
-          <button onclick="submitData()" id="btn" type="button">Donate</button>
+          <div class="form-control">
+            <label for="cardHolder">Card Holder</label>
+            <input type="text" placeholder="Katlego Mashego..." id="cardHolder" />
+            <img class="happy" src="./Assets/icons/happy.png">
+            <img class="sad" src="./Assets/icons/sad-face.png">
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="mmyy">Expiry</label>
+            <input type="number" placeholder="MM/YY" id="mmyy"/>
+            <img class="happy" src="./Assets/icons/happy.png">
+            <img class="sad" src="./Assets/icons/sad-face.png">
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="cvv">Password check</label>
+            <input type="number" placeholder="CVV" id="cvv"/>
+            <img class="happy" src="./Assets/icons/happy.png">
+            <img class="sad" src="./Assets/icons/sad-face.png">
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="amount">Password check</label>
+            <input type="number" placeholder="R200 000" id="amount"/>
+            <img class="happy" src="./Assets/icons/happy.png">
+            <img class="sad" src="./Assets/icons/sad-face.png">
+            <small>Error message</small>
+          </div>
+          <button>DONATE</button>
         </form>
       </div>
     </main>
@@ -211,11 +188,7 @@
           <h1><b>FAQs</b></h1>
           <br />
           <link rel="stylesheet" href="Assets/CSS/faq.css" />
-          <div class="container nav_container">
-                      
-                        
-                      
-                       
+          <div class="container nav_container">     
             <button id="menu-btn" style="display: none;"><i class="uil uil-bars"></i></button>
             <button id="close-btn" style="display: none;" ><i class="uil uil-multiply"></i></i></button>
         </div> 
