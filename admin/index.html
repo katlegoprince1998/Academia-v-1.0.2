@@ -18,13 +18,13 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="admin.css">
   </head>
-  <body onload="takeToHtml()">
+  <body onload="getStorage()">
 
     <!-- navbar -->
     <nav class="navbar">
       <div class="logo_item">
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img class="logo" src="./images/school_logo.png" alt="logo" /></i>Mzamomtsha primary school
+        <img class="logo" src="./images/schoollogo.png" alt="logo" /></i>Mzamomtsha primary school
       </div>
 
       <div class="search_bar">
@@ -286,7 +286,7 @@
     <div class="dash-right">
       <h1>Donators</h1>
        <div class="data-right">
-        <div class="table">
+        <div class="table " >
         <table class="table table-hover table-border  table-striped">
           <thead>
             <tr>
@@ -295,22 +295,22 @@
               <th scope="col">Amount</th>
             </tr>
           </thead>
-          <tbody class="">
-            <tr>
+          <tbody class="" id="container">
+            <!-- <tr>
               <td>Anele</td>
               <td>1555******</td>
               <td>150000</td>
-            </tr>
-            <tr>
+            </tr> -->
+            <!-- <tr>
               <td>Anonymous</td>
               <td>1555******</td>
               <td>150000</td>
-            </tr>
-            <tr>
+            </tr> -->
+            <!-- <tr>
               <td>Xolani</td>
               <td>1555******</td>
               <td>150000</td>
-            </tr>
+            </tr> -->
           
           </tbody>
         </table>
@@ -318,7 +318,7 @@
 
         
            <div class="total-donators">
-            <h1>Total Donators: </h1><span>3</span>
+            <h1>Total Donators: </h1><span id="cnt"></span>
            </div>
         
        </div> 

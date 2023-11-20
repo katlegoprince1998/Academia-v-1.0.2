@@ -1,25 +1,26 @@
 console.log("ashley");
 
-let div = '';  
-let html = '';
+// let div = '';  
+// let html = '';
 
-function copyToHtml(student) 
-{
-    let bookDiv=document.getElementById("adm")
+// function copyToHtml(student) 
+// {
+//     let bookDiv=document.getElementById("adm")
 
 
-    div=
-    `
-    <tr>
-        <td>${student.Name}</td>
-        <td>${student.Surname}</td>
-        <td>${student.PhoneNum}</td>
-        <td>${student.staus}</td>
-      </tr>
-    `
-    html +=div;
-    bookDiv.innerHTML=html
-}function addEvents() {
+//     div=
+//     `
+//     <tr>
+//         <td>${student.Name}</td>
+//         <td>${student.Surname}</td>
+//         <td>${student.PhoneNum}</td>
+//         <td>${student.staus}</td>
+//       </tr>
+//     `
+//     html +=div;
+//     bookDiv.innerHTML=html;
+// }
+function addEvents() {
 
   console.log("clicked")
   const storage = firebase.storage().ref("EventsCover");
@@ -76,31 +77,52 @@ let month=document.getElementById("month").value;
   })
 
 }
-// let div1 = '';  
-// let html1 = '';
-// function takeToHtml() {
-//   let bookDiv=document.getElementById("usr")
-//   let storage= localStorage.getItem("Personal");
-//   let data=JSON.parse(storage);
-//   let storage1= localStorage.getItem("Contact"); 
-//   let data2=JSON.parse(storage1);
-//   let storage3= localStorage.getItem("NextOfKin");
-//     let data3=JSON.parse(storage3);
-//     document.getElementById("name")=data[0].Names;
-//     document.getElementById("surname")=data[0].Surnaam;
-//     document.getElementById("phone")=data3[0].Phone;
-//     document.getElementById("idNum")=data[0].ID;
+//RETRIEVE DONATIONS DATA FROM FIREBASE
 
-//   div=
-//   `
-//   <tr>
-//       <td id="name">${data[0].Naams}</td>
-//       <td id="surname">${data[0].Surnaam}</td>
-//       <td id="phone">${data3[0].Phone}</td>
-//       <td id="idNum">${data[0].ID}</td>
-//     </tr>
-//   `
-//   html1 +=div1;
-//   bookDiv.innerHTML=html1;
+let html1='';  
+let div1='';  
+let count=0;
+function addHtml(donate){
   
-// }
+  parentDiv1=document.getElementById("container");
+
+  let stringConcat="***********"
+//  let cardNo= CardNumber.substring(1, 4)
+   div1=`
+  
+   <tr>
+   
+   <td>${donate.cardHolder}</td>
+   <td>${donate.CardNumber.substring(1, 4)+stringConcat}</td>
+   <td>R${donate.Amount}</td>
+ </tr>
+   
+    `
+    
+    //document.getElementById("cnt").innerHTML=count;
+    html1+=div1;
+
+   parentDiv1.innerHTML=html1;
+   
+  //  document.querySelector(".cnt").innerHTML=count;
+
+ }
+ function getStorage(){
+
+  db.collection("Donations").get().then( (donates) =>{
+
+    donates.forEach(donate => {
+        
+         addHtml(donate.data());
+   count++;
+    
+
+        console.log(donate.data())
+
+     });
+     document.getElementById("cnt").innerHTML = count;
+    })
+   
+ }
+
+ 
