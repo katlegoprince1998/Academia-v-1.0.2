@@ -121,6 +121,9 @@ form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
+	if(cardNoValue !== "" && cardHolderValue !== "" && mmyyValue !== "" && cvvValue !== "" && amountValue !== "") {
+		Donate();
+	}
 });
 
 function checkInputs() {
@@ -201,6 +204,37 @@ function setSuccessFor(input) {
 }
 	
 
-
 ////////////////////////////////////////////////////////////////
 //charts
+
+
+let count=0;
+function Donate() {
+    count++;
+	const cardNoValue = cardNUm.value.trim();
+	const cardHolderValue = cardHolder.value.trim();
+	const mmyyValue = mmyy.value.trim();
+	const cvvValue = cvv.value.trim();
+	const amountValue = amount.value.trim();
+
+
+	if(cardNoValue !== "" && cardHolderValue !== "" && mmyyValue !== "" && cvvValue !== "" && amountValue !== "") {
+		db.collection("Donations").add({
+			CardNumber:cardNoValue,
+			cardHolder:cardHolderValue,
+			Amount:amountValue
+		   })
+		   .then(()=>{
+			 
+			   console.log(count);
+			 alert("Successfully donated to the school.")
+		   })
+	}else{
+		alert("Failed to submit donation.")
+	}
+   
+       
+     
+    
+   
+}
