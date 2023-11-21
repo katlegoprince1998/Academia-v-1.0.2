@@ -117,7 +117,7 @@ function addHtml(donate){
    count++;
     
 
-        console.log(donate.data())
+        //console.log(donate.data())
 
      });
      document.getElementById("cnt").innerHTML = count;
@@ -126,3 +126,45 @@ function addHtml(donate){
  }
 
  
+ //RETRIVE APPLICATIONS DATA FROM DATABASE
+ let div2="";
+ let html2="";
+ function addHtml1(student){
+  
+  parentDiv1=document.getElementById("usr");
+
+ 
+   div2=`
+  
+   <tr>
+             
+              <td>${student.Naams}</td>
+              <td>${student.Surnaam}</td>
+              <td>${student.ID}</td>
+              <td>${student.Gender}</td>
+            </tr>
+   
+    `
+    
+    
+    html2+=div2;
+
+   parentDiv1.innerHTML=html2;
+   
+ 
+ }
+ function getStorage1(){
+
+  db.collection("studentApplication").get().then( (students) =>{
+
+    students.forEach(student => {
+        
+         addHtml1(student.data());
+  
+        console.log(student.data());
+
+     });
+    
+    })
+   
+ }
