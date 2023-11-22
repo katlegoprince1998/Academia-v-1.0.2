@@ -50,63 +50,57 @@
 </head>
 <body onload="myLoad()" style="background-color: var(--primary-color);">
 
-   <!--Dark mode-->
- 
-   
-
-   
-   <!--Dark mode-->
 
 
-    <nav class="navbar navbar-expand-lg" style="background-color: var(--primary-color); box-shadow: 0 2px 16px 2px rgba(124, 114, 114, 0.25);"  class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg" style="background-color: var(--primary-color); box-shadow: 0 2px 16px 2px rgba(124, 114, 114, 0.25);"  class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-        <a  class="schoolName" href="#">
-          <img class="logo" src="./assets/images/schoollogo.png" alt="logo" />
-             &nbsp;Mzamomtsha Primary School
-        </a>
+      <a  class="schoolName" href="#">
+        <img class="logo" src="./assets/images/school_logo.png" alt="logo" />
+           &nbsp;Mzamomtsha Primary School
+      </a>
 
-        <button type="button" class="navbar-toggler" 
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button type="button" class="navbar-toggler" 
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto align-items-center">
-              <a href="./index.html" class="nav-item nav-link">Home</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto align-items-center">
+            <a href="./home2.html" class="nav-item nav-link current">Home</a>
 
-              <a href="./about.html" class="nav-item nav-link current">About Us</a>
+            <a href="./about.html" class="nav-item nav-link ">About Us</a>
 
-              <a href="./events.html" class="nav-item nav-link">Events</a>
+            <a href="./events.html" class="nav-item nav-link">Events</a>
 
-              <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
 
-              <div class="dropdown">
-                
-                <a href="#" class="nav-item nav-link">
-                  Explore More
-                  <i class="fa-solid fa-circle-chevron-down"></i>
+            <div class="dropdown">
+              
+              <a href="#" class="nav-item nav-link">
+                Explore More
+                <i class="fa-solid fa-circle-chevron-down"></i>
+              </a>
+
+              <div class="dropdown-options">
+                <a href="application/app1.html">Apply</a>
+
+                <a href="#"
+          data-toggle="modal" 
+                   data-target=".bd-example-modal-lg" style="cursor: pointer;">
+                   Faqs
                 </a>
 
-                <div class="dropdown-options">
-                  <a href="application/app1.html">Apply</a>
-
-                  <a href="#"
-            data-toggle="modal" 
-                     data-target=".bd-example-modal-lg" style="cursor: pointer;">
-                     FAQS
-                  </a>
-
-                  <a href="donations.html">Donations</a>
-                </div>
-                </div>
-                <img id="icon" src="./Images/moon.png" alt="sun" style="width: 30px;">
+                <a href="donations.html">Donations</a>
               </div>
-          </div>
+              </div>
+              <img id="icon" src="./Images/Dark_Mode.png" alt="lightMode" style="width: 30px;">
+            </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <div id="banner"></div>
     
@@ -344,7 +338,7 @@
   >
     <section
       class="d-flex justify-content-between p-2"
-      style="background-color: #808000"
+      style="background-color: #555"
     >
       <div class="me-5">
         <!-- <span> Get connected with us on social networks: </span> -->
@@ -377,7 +371,7 @@
 
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #808000; height: 2px"
+              style="width: 60px; background-color: #fff; height: 2px"
             />
 
             <p>
@@ -394,7 +388,7 @@
 
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #808000; height: 2px"
+              style="width: 60px; background-color: #fff; height: 2px"
             />
 
             <p>
@@ -426,7 +420,7 @@
 
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #808000; height: 2px"
+              style="width: 60px; background-color: #fff; height: 2px"
             />
 
             <p>
@@ -451,7 +445,7 @@
 
             <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #808000; height: 2px"
+              style="width: 60px; background-color: #555; height: 2px"
             />
 
             <p><i class="fas fa-home mr-3"></i> Umfuleni, Cape Town , RSA</p>
@@ -462,7 +456,7 @@
              <!-- CHAT BAR BLOCK -->
   <div class="chat-bar-collapsible">
     <button id="chat-button" type="button" class="collapsible">
-      Chat with us!
+      Chat With Us 🙂
       <i
         id="chat-icon"
         style="color: #fff"
@@ -523,18 +517,13 @@
       <!--chat system-->
     </section>
 
-    <div class="text-center p-2" style="background-color: #808000">
+    <div class="text-center p-2" style="background-color: #555">
       © 2023 Copyright:
 
       <a class="text-white" href="index.html" style="text-decoration: none;"> Mzamomtsha Primary School </a>
     </div>
   </footer>
-        <!-- Preloader -->
-        <!-- <div class="loader">
-          <div id="loade">
-            
-          </div>
-        </div> -->
+        
 
 
         <script src="Assets/JS/preloader.js"></script>
@@ -559,9 +548,9 @@
       icon.onclick = function () {
           document.body.classList.toggle("dark-mode");
           if (document.body.classList.contains("dark-mode")) {
-              icon.src = "./Assets/icons/sun.png";
+            icon.src = "./Images/Dark_Mode.png";
           }else{
-              icon.src = "./Images/moon.png";
+            icon.src = "./Images/Dark_Mode.png";
           }
       };
 
