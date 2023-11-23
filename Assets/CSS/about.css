@@ -33,16 +33,20 @@ body {
     /* overflow: hidden; */
 }
 a.current{
-    color: var(  --card-title-color);
+    color: #c94848;
+    font-weight: 900;
+  }
+  .current:hover{
+    color: #990707;
 }
 .display-1{
-    color: var(--display-5-color);
+    color: #990707;
 }
 nav a:hover{
-    color: var(--active--color);
+    color: #990707;
 } .collapse a:hover
 {
-    color: var( --card-title-color);
+    color: #990707;
 }
 
 .logo{
@@ -151,7 +155,7 @@ nav li:first-child{
   }
 
   .dropdown .dropdown-options a:hover {
-    color: var(--active--color);
+    color: #990707;
   }
 
 

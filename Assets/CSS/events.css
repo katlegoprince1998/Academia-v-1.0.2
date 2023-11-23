@@ -52,13 +52,14 @@ p{
     height: 1rem;
 }
 a.current{
-    color: var(  --card-title-color);
-}
+    color: #c94848;
+    font-weight: 900;
+  }
 .current:hover{
-    color: var(--current-color);
+    color: #990707;
 }
 .conHead{
-    color: var(--display-5-color);
+    color: #990707;
 }
 /* changes */
 .navbar {
@@ -148,7 +149,7 @@ nav li:first-child{
   }
 
   .dropdown .dropdown-options a:hover {
-    color: var(--active--color);
+    color: #990707;
   }
 
 

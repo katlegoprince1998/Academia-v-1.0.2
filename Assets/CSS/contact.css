@@ -31,13 +31,14 @@
 } 
 
 a.current{
-    color: var(  --card-title-color);
-}
+    color: #c94848;
+    font-weight: 900;
+  }
 .current:hover{
-    color: var(--current-color);
+    color: #990707;
 }
 nav a:hover{
-    color: var(--active--color);
+    color: #990707;
 }
 /* a.active{
     color:var(--active--color);
@@ -151,7 +152,7 @@ nav li:first-child{
   }
 
   .dropdown .dropdown-options a:hover {
-    color: var(--active--color);
+    color: #990707;
   }
 
   .faqN {

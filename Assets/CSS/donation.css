@@ -27,14 +27,21 @@
     margin: 0;
     box-sizing: border-box;
 } 
+a.current{
+  color: #c94848;
+ 
+}
+.current:hover{
+  color: #990707;
+}
 
 
 .collapse a:hover
 {
-    color: var( --hover-aclor);
+    color: #990707;
 }
 nav a:hover{
-    color: var(--active--color);
+    color: #990707;
 }
 .logo{
     width: 45px;
@@ -135,7 +142,7 @@ nav li:first-child{
   }
 
   .dropdown .dropdown-options a:hover {
-    color: var(--active--color);
+    color: #990707;
   }
 
 
@@ -143,18 +150,19 @@ nav li:first-child{
   main{
     background-size: cover;
     background-image: url(../Images/donate.jpg);
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     width: 100vw;
     padding: 50px;
+   
     
 }
 .payment-form {
 background-color: #fff;
 width: 600px;
 margin: 0 auto;
-height: 620px;
+height: 600px;
 border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 padding: 10px;
@@ -240,9 +248,9 @@ margin-bottom: 20px;
 	font-family: inherit;
 	font-size: 16px;
 	padding: 10px;
-	margin-top: 20px;
+	margin: ;
 	width: 100%;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 
